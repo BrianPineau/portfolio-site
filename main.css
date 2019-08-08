@@ -163,56 +163,5 @@ header li:nth-child(2) {
     grid-row: 2/3;
 }
 
-/*
-.hero-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin-top: 180px;
-}
+/*  Project Section  */
 
-.pic-box {
-    height: 450px;
-    width: 450px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.box1 {
-    background-image: url('./resources/images/coolpic.jpg');
-    grid-column: 1/2;
-}
-
-.box2 {
-    background-image: url('./resources/images/diet.png');
-    grid-column: 2/3;
-}
-
-.box3 {
-    background-image: url('./resources/images/random.png');
-    grid-column: 3/4;
-}
-
-.box4 {
-    background-image: url('./resources/images/secrandom.png');
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.box5 {
-    background-image: url('./resources/images/stuff.png');
-    grid-column: 2/3;
-    grid-row:2/3;
-}
-
-.box6 {
-    background-image: url('./resources/images/test.png');
-    grid-column: 3/4;
-    grid-row:2/3;
-}
-*/
-
-
-/*  Image Section  */
