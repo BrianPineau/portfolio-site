@@ -1,5 +1,6 @@
 
 
+/*  Header shrink on scroll  */
 const head = document.querySelector('header');
 const noShow = document.querySelector('.arrow-box');
 const skillText = document.querySelector('.skills-text');
@@ -12,7 +13,15 @@ window.addEventListener('scroll', function () {
 
     } 
 });
+
+
+/*  Hero image scroll effect  */
+const heroPic = document.querySelector('.hero-pic');
+
+
+
  
+/*  Skill-text slide in  */
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
     triggerElement: '.skill-1',

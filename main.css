@@ -87,7 +87,7 @@ header li:nth-child(2) {
     font-weight: 200;
 }
 
-.hero-self-portrait {
+.hero-pic {
     width: 200px;
     border-radius: 100%;
     border: 2px solid rgb(22, 98, 238);
@@ -134,21 +134,18 @@ header li:nth-child(2) {
 }
 
 .skills-text {
-    margin-left: 0;
     width: 100%;
     position: relative;
+    margin-right: 60px;
+    text-align: justify;
 }
 
 .skills-item {
     position: absolute;
     opacity: 0;
     max-width: 100%;
-    left: -100%;
+    left: -50%;
     transition: 1.5s ease-out;
-}
-
-.skill-each.show {
-    
 }
 
 .skill-1 {
@@ -162,6 +159,7 @@ header li:nth-child(2) {
 
 .skill-2 {
     top: 30%;
+    margin-top: 20px;
 }
 
 .skill-2.show {
@@ -171,6 +169,7 @@ header li:nth-child(2) {
 
 .skill-3 {
     top: 60%;
+    margin-top: 20px;
 }
 
 .skill-3.show {
@@ -217,52 +216,47 @@ header li:nth-child(2) {
 .projects-container {
     display: flex;
     justify-content: center;
+    height: 120vh;
     background-color: rgb(247, 247, 247);
 }
 
 .projects-inner-container {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 1180px;
+    height: 100%;
     margin: 40px 0;
-    
 }
 
 .projects-individual-container {
-    position: relative;
-    flex-basis: 50%;
-    height: 450px;
     border: 3px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .projects-individual-box-1 {
-    background: bisque;
+    grid-column: 1/2;
+    grid-row: 1/2;
     background-image: url("./Resources/Images/shop.jpg");
-    background-size: contain;
+    
 }
 
 .projects-individual-box-2 {
-    background: violet;
+    grid-column: 1/2;
+    grid-row: 2/3;
     background-image: url("./Resources/Images/ColmarAcademy.jpg");
-    background-size: contain;
 }
 
-.projects-bottom-half-box {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    border-top: 3px solid black;
-    z-index: 5;
-    background: lightskyblue;
-    border-radius: 0 0 2px 2px;
-    transition: all 0.25s ease-out; 
+.project-text-1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
-.projects-bottom-half-box:hover {
-    height: 99%;
+.project-text-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 .projects-icon {
