@@ -15,10 +15,6 @@ window.addEventListener('scroll', function () {
 });
 
 
-/*  Hero image scroll effect  */
-const heroPic = document.querySelector('.hero-pic');
-
-
 
  
 /*  Skill-text slide in  */

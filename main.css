@@ -15,8 +15,9 @@ header {
     height: 87vh;
     width: 100vw;
     background: skyblue;
-    color: rgb(214, 63, 47);
+    color: #D85A5A;
     transition: all 300ms ease-out; 
+    z-index: 1000;
 }
 
 .shrink {
@@ -26,8 +27,15 @@ header {
 
 .inner-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.skills-title {
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-wrapper {
@@ -133,9 +141,32 @@ header li:nth-child(2) {
     max-width: 60%;
 }
 
+.section-title-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    margin: 40px auto 100px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1180px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.section-underline {
+    border: solid 1px #D85A5A;
+    width: 400px;
+}
+
 .skills-text {
     width: 100%;
     position: relative;
+    margin-top:25px;
     margin-right: 60px;
     text-align: justify;
 }
@@ -184,6 +215,8 @@ header li:nth-child(2) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
+    max-width: 100%;
+    
 }
 
 .skill-icon {
@@ -214,9 +247,8 @@ header li:nth-child(2) {
 /*  Project Section  */
 
 .projects-container {
-    display: flex;
-    justify-content: center;
     height: 120vh;
+    margin: 0 auto;
     background-color: rgb(247, 247, 247);
 }
 
@@ -224,9 +256,10 @@ header li:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
     width: 1180px;
     height: 100%;
-    margin: 40px 0;
+    margin: 40px auto;
 }
 
 .projects-individual-container {
@@ -249,12 +282,16 @@ header li:nth-child(2) {
     background-image: url("./Resources/Images/ColmarAcademy.jpg");
 }
 
-.project-text-1 {
+.project-text {
+    margin: auto;
+}
+
+.proj-text-1 {
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.project-text-2 {
+.proj-text-2 {
     grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -274,6 +311,10 @@ header li:nth-child(2) {
 
 .projects-icon img {
     width: 50%;
+}
+
+.project-overlay {
+
 }
 
 /*  Contact Section  */
